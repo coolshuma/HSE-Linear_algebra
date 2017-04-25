@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  25 APR 2017 14:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  25 APR 2017 20:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,41 +700,57 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+ [2] [3]
+Overfull \hbox (12.23695pt too wide) in paragraph at lines 167--167
+[] 
+ []
+
+
+Overfull \hbox (38.62428pt too wide) in paragraph at lines 178--178
+[] 
+ []
+
+[4]
+Overfull \hbox (15.21152pt too wide) in paragraph at lines 197--197
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
-[4] (./IDZ 5.aux) ) 
+[6] (./IDZ 5.aux) ) 
 Here is how much of TeX's memory you used:
  3093 strings out of 494440
  34513 string characters out of 6173198
- 96181 words of memory out of 5000000
+ 102181 words of memory out of 5000000
  6330 multiletter control sequences out of 15000+600000
  15636 words of font info for 41 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 29i,9n,29p,847b,143s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,15n,29p,847b,194s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfti1200.pfb>
-Output written on "IDZ 5.pdf" (4 pages, 148684 bytes).
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+bx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
+i1200.pfb>
+Output written on "IDZ 5.pdf" (6 pages, 168364 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

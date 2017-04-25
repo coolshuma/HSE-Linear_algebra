@@ -123,7 +123,7 @@
 	(б) Для вектора $u = (0,2,1,0)$ найдите его проекцию на $U$, его ортогональную составляющую относительно $U$ и расстояние от него до $U$.}
 
 	\textbf{Решение.}\\
-	Запишем уравнение в виде $x_3 = 3x_1 + 5x_2 + 3x_4$ и найдем ФСР. Количество решений в ней будет равно 3. \\
+	(a) Запишем уравнение в виде $x_3 = 3x_1 + 5x_2 + 3x_4$ и найдем ФСР. Количество решений в ней будет равно 3. \\
 	\begin{tabular}[t]{|l|l|l|l|}
 		\hline
 		$x_1$	& $x_2$ & $x_3$ & $x_4$\\
@@ -135,6 +135,74 @@
 		$0$	& $0$ & $3$ & $1$\\
 		\hline
 	\end{tabular}
+	
+	\[\Phi = 
+		\begin{pmatrix}
+		\phi_1 & \phi_2 & \phi_3 
+		\end{pmatrix} = 
+		\begin{pmatrix}
+		1 & 0 &  0 \\
+		0 & 1 &  0 \\
+		3 & 5 &  3 \\
+		0 & 0 &  1 \\
+		\end{pmatrix}
+	\]
+	Где столбцы $\phi_1, \phi_2, \phi_3$ образуют ФСР и заданное подпространоство будет являться линейной оболочкой данных столбцов, поскольку они линейно-независимы(легко заметить, так как в трех строках в одном месте единица, а в остальных нули). 
+	
+	Для наглядности запишем векторы, которые образуют подпространство:
+	\begin{align*}
+		&\vec x_1 =  \begin{pmatrix} 1 & 0 & 3 & 0 \end{pmatrix} \\
+		&\vec x_2 =  \begin{pmatrix} 0 & 1 & 5 & 0 \end{pmatrix} \\
+		&\vec x_3 =  \begin{pmatrix} 0 & 0 & 3 & 1 \end{pmatrix} \\
+	\end{align*}
+	
+	Теперь с помощью метода Грама-Шмидта ортогонализируем и нормируем данные векторы.\\
+	$(\vec{u}, \vec{v})$ -- скалярное произведение векторов.	
+	\begin{align*}
+	&\vec b_1 = \begin{pmatrix} 1 & 0 & 3 & 0 \end{pmatrix} \\
+	&\vec b_2 = \vec x_2 - \frac{(\vec x_2,\vec b_1)}{(\vec b_1,\vec b_1)} \cdot \vec b_1  = \begin{pmatrix} 0 & 1 & 5 & 0 \end{pmatrix} - \frac{15}{10} \cdot \begin{pmatrix} 1 & 0 & 3 & 0 \end{pmatrix} = \begin{pmatrix} -1,5 & 1 & 0,5 & 0 \end{pmatrix} \\
+	&\vec b_3 = \vec x_3 - \frac{(\vec x_3,\vec b_1)}{(\vec b_1,\vec b_1)} \cdot \vec b_1 - \frac{(\vec x_3,\vec b_2)}{(\vec b_2,\vec b_2)} \cdot \vec b_2  = \begin{pmatrix} 0 & 0 & 3 & 1 \end{pmatrix} - \frac{9}{10} \begin{pmatrix} 1 & 0 & 3 & 0 \end{pmatrix} - \\
+	& - \frac{1,5}{3,5} \begin{pmatrix} -1,5 & 1 & 0,5 & 0 \end{pmatrix} = \begin{pmatrix} -\frac{3,15}{3,5} & 0 & \frac{1,05}{3,5} & 1 \end{pmatrix} - \begin{pmatrix} -\frac{2,25}{3,5} & \frac{1,5}{3,5} & \frac{0,75}{3,5} & 0 \end{pmatrix} = \\
+	& = \frac{1}{3,5}\begin{pmatrix} -0,9 & -1,5 & 0,3 & 3,5 \end{pmatrix}
+	\end{align*}
+	
+	Нормируем их по формуле
+	\[
+		\vec e_j = \frac{\vec b_j}{||\vec b_j||},\ где ||\vec b_j|| = \sqrt{(b_j, b_j)}.
+	\]
+	
+	\begin{align*}
+	&e_1 = \frac{\vec b_1}{\sqrt{10}} = \begin{pmatrix} \frac{1}{\sqrt{10}} & 0 & \frac{3}{\sqrt{10}} & 0 \end{pmatrix} \\
+	&e_2 = \frac{\vec b_2}{\sqrt{3,5}} = \begin{pmatrix} -\frac{1,5}{\sqrt{3,5}} & \frac{1}{\sqrt{3,5}} & \frac{0,5}{\sqrt{3,5}} & 0 \end{pmatrix} = \begin{pmatrix} -\frac{3}{\sqrt{14}} & \sqrt{\frac{2}{7}} & \frac{1}{\sqrt{14}} & 0 \end{pmatrix}\\
+	&e_3 = \frac{\vec b_3}{\sqrt{\frac{44}{35}}}= \frac{1}{\sqrt{\frac{44}{35}} \cdot 3,5}\begin{pmatrix} -0,9 & -1,5 & 0,3 & 3,5 \end{pmatrix} = \frac{1}{\sqrt{15,4}}\begin{pmatrix} -0,9 & -1,5 & 0,3 & 3,5 \end{pmatrix}
+	\end{align*}
+	$(e_1, e_2, e_3)$ -- искомый ортонормированный базис.
+	
+	(б) Ортонормированный базис $U$ 
+	\begin{align*}
+	&e_1 = \begin{pmatrix} \frac{1}{\sqrt{10}} & 0 & \frac{3}{\sqrt{10}} & 0 \end{pmatrix} \\
+	&e_2 = \begin{pmatrix} -\frac{3}{\sqrt{14}} & \sqrt{\frac{2}{7}} & \frac{1}{\sqrt{14}} & 0 \end{pmatrix}\\
+	&e_3 = \frac{1}{\sqrt{15,4}}\begin{pmatrix} -0,9 & -1,5 & 0,3 & 3,5 \end{pmatrix}
+	\end{align*}
+	вектор $u = (0,2,1,0)$.
+	
+	Учитывая, что у мы нашли ортонормированный базис $U$ ортогональная проекция будет иметь вид:
+	\[
+	pr_Uu = \sum_{i=1}^{3} (u, e_i)e_i
+	\]
+	\begin{align*}
+	&pr_Uu = \frac{3}{\sqrt{10}}\begin{pmatrix} \frac{1}{\sqrt{10}} & 0 & \frac{3}{\sqrt{10}} & 0 \end{pmatrix} + \frac{5}{\sqrt{14}} \begin{pmatrix} -\frac{3}{\sqrt{14}} & \sqrt{\frac{2}{7}} & \frac{1}{\sqrt{14}} & 0 \end{pmatrix} -\\
+	&- \frac{2,7}{15,4} \begin{pmatrix} -0,9 & -1,5 & 0,3 & 3,5 \end{pmatrix} = \begin{pmatrix} 0,3 & 0 & 0,9 & 0 \end{pmatrix} + \begin{pmatrix} -\frac{15}{14} & \frac{5}{7} & \frac{5}{14} & 0 \end{pmatrix} +\\
+	&+ \begin{pmatrix} \frac{2,43}{15,4} & \frac{4,05}{15,4} & -\frac{0,81}{15,4} & -\frac{9.45}{15,4} \end{pmatrix} = \begin{pmatrix} -\frac{27}{44} & \frac{43}{44} & \frac{53}{44} & -\frac{27}{44} \end{pmatrix} = \frac{1}{44} \begin{pmatrix} -27 & 43 & 53 & -27 \end{pmatrix}
+	\end{align*}
+	Тогда найдем ортогональную составляющую:
+	\[
+	ort_Uu = \begin{pmatrix} \frac{27}{44} & \frac{45}{44} & -\frac{9}{44} & \frac{27}{44} \end{pmatrix} = \frac{1}{44} \begin{pmatrix} 27 & 45 & -9 & 27 \end{pmatrix}
+	\]
+	Заметим, что $(pr_Uu, ort_Uu) = 0$, значит они найдены правильно.
+	
+	Расстояние от $\vec u$ до подпространства $U$ равно $|ort_Uu| = \frac{9}{\sqrt{44}}$.
+	
 	
 	\subsection{Задача 3} 
 	\textit{Составьте уравнение прямой в $\mathbb{R}^3$, параллельной плоскости $-2x+4y+2z=0$, проходящей через точку $(2,3,2)$ и пересекающей прямую $x = 2t + 1,\ y = 4t - 2, z = 3t + 1$.}
