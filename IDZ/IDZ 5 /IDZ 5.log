@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  26 APR 2017 01:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.11)  26 APR 2017 03:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -728,25 +728,41 @@ Overfull \hbox (5.54045pt too wide) in paragraph at lines 265--266
  []
 
 [6]
-Overfull \hbox (9.2787pt too wide) in paragraph at lines 292--294
+Overfull \hbox (9.2787pt too wide) in paragraph at lines 292--303
 \T2A/cmr/m/n/12 Точка на пря-мой $\OML/cmm/m/it/12 AE$ \T2A/cmr/m/n/12 -- $\OML
 /cmm/m/it/12 A\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/
 it/12 ; \OT1/cmr/m/n/12 0)$ \T2A/cmr/m/n/12 и на-прав-ля-ю-щий век-тор $\OT1/cm
 r/m/n/12 11[] = (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 33\OML/cmm/m/it/12 ; \OT1/
-cmr/m/n/12 18)$\T2A/cmr/m/n/12 ,
+cmr/m/n/12 18)$\T2A/cmr/m/n/12 .
  []
 
 
-Overfull \hbox (30.98569pt too wide) in paragraph at lines 296--298
-\T2A/cmr/m/n/12 Точка на пря-мой $\OML/cmm/m/it/12 D[]F$ \T2A/cmr/m/n/12 -- $\O
-ML/cmm/m/it/12 F\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/
-m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 5)$ \T2A/cmr/m/n/1
-2 и на-прав-ля-ю-щий век-тор $[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/cm
-r/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/
-12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 5)$\T2A/cmr/m/n/12 ,
+Overfull \hbox (30.98569pt too wide) in paragraph at lines 292--303
+\T2A/cmr/m/n/12 Точ-ка на пря-мой $\OML/cmm/m/it/12 D[]F$ \T2A/cmr/m/n/12 -- $\
+OML/cmm/m/it/12 F\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm
+/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 5)$ \T2A/cmr/m/n/
+12 и на-прав-ля-ю-щий век-тор $[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 ^^@\OT1/c
+mr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OMS/cmsy/m/n
+/12 ^^@\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 5)$\T2A/cmr/m/n/12 . 
+
  []
 
-[7] (./IDZ 5.aux) ) 
+[7]
+Overfull \hbox (73.1172pt too wide) detected at line 324
+[] \OT1/cmr/m/n/12 = [11[]\OML/cmm/m/it/12 ; []\OT1/cmr/m/n/12 ] = [] = (\OMS/c
+msy/m/n/12 ^^@\OT1/cmr/m/n/12 49\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5 \OMS/cmsy/
+m/n/12 ^^@ \OT1/cmr/m/n/12 54)[] + (\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 54)[] +
+ (99)[] = \OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 103\OML/cmm/m/it/12 ; :\OT1/cmr/m
+/n/12 5[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 54[] + 99[]\OML/cmm/m/it/12 :
+ []
+
+
+Overfull \hbox (10.54462pt too wide) in paragraph at lines 338--339
+\T2A/cmr/m/n/12 ние и мо-дуль по-лу-чен-ной ве-ли-чи-ны и бу-дет ис-ко-мым рас-
+сто-я-ни-ем(заметим,
+ []
+
+[8] (./IDZ 5.aux) ) 
 Here is how much of TeX's memory you used:
  3093 strings out of 494440
  34513 string characters out of 6173198
@@ -768,10 +784,10 @@ bx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sft
 i1200.pfb>
-Output written on "IDZ 5.pdf" (7 pages, 174955 bytes).
+Output written on "IDZ 5.pdf" (8 pages, 179205 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
